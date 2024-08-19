@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 2.5em;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background: linear-gradient(to right, #ff6b6b, #f06595); /* Gradient button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #f06595, #ff6b6b);
+}
+
+button:active {
+    background: linear-gradient(to right, #e54b67, #f05477);
+}
+
+p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+input[type="number"] {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    input[type="text"], input[type="number"], textarea {
+        width: calc(100% - 18px);
+    }
+}
